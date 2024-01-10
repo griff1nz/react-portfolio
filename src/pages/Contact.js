@@ -1,5 +1,5 @@
 function Contact() {
-    return <div>Contact Me</div>
+    return <div className='height85'>Contact Me</div>
 }
 
 export default Contact;

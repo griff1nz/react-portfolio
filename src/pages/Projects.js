@@ -1,5 +1,5 @@
 function Projects() {
-    return <div>Me Projects</div>
+    return <div className='height85'>Me Projects</div>
 }
 
 export default Projects;
