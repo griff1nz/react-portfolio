@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import classes from './MainNav.css';
 function MainNav() {
-    return <header className='sticky top-0 border-b-2 border-black'>
+    return <header className='sticky top-0 border-b border-black'>
         <nav className="backdrop-blur-lg p-2">
             <div className="w-11/12 flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">

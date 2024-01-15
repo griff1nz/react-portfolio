@@ -15,7 +15,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 .height85 {
-  min-height: 85vh;
+  min-height: 82vh;
+}
+
+.skill {
+  height: 70px;
 }
 
 code {
