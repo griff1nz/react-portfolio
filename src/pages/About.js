@@ -10,7 +10,7 @@ function About() {
             </AboutCard>
             <AboutCard>
                 <p className='text-white text-3xl underline font-semibold mt-6'>Educational Background</p>
-                <p className='text-white text-xl my-2'>As of March 2024, I will have graduated with a certificate in Full Stack Web Development from University of Pennsylvania. During my academic journey, I developed a strong foundation in programming languages such as HTML, CSS, and JavaScript, and gained hands-on experience in building responsive and dynamic web applications.
+                <p className='text-white text-xl my-2'>As of March 2024, I will have graduated with a certificate in Full-Stack Web Development from University of Pennsylvania. During my academic journey, I developed a strong foundation in programming languages such as HTML, CSS, and JavaScript, and gained hands-on experience in building responsive and dynamic web applications.
                     Prior to that, I passed AP Computer Science A and achieved an exam score of 5 before graduating from Emmaus High School in Emmaus, PA.</p>
             </AboutCard>
             <AboutCard>
@@ -31,6 +31,7 @@ function About() {
             </div> */}
                 <p className='text-white text-3xl underline font-semibold mt-6'>Beyond the Screen</p>
                 <p className='text-white text-xl my-2'>Outside of coding, I'm an avid learner and enjoy exploring new technologies. When not immersed in lines of code, you'll find me playing the saxophone/cello, working out at the gym, or spending time outside.</p>
+                <img src='../../images/cello.jpg' alt='Cello playing' className='w-3/4 m-auto'></img>
             </AboutCard>
             <AboutCard>
                 <p className='text-white text-3xl underline font-semibold mt-6'>Connect with Me</p>
