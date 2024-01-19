@@ -3,6 +3,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 5vh;
-    background-color: blue;
+    height: 7vh;
+    background-color: #374151;
+    border-top: 1px solid black;
 }

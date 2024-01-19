@@ -18,12 +18,26 @@ function MainNav() {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+    const setDarkMode = () => {
+        document.querySelector('body').setAttribute('theme', 'dark');
+    };
+    const setLightMode = () => {
+        document.querySelector('body').setAttribute('theme', 'light');
+    };
+    const toggleTheme = (e) => {
+        if (document.querySelector('body').getAttribute('theme') === 'dark') {
+            setLightMode();
+        }
+        else {
+            setDarkMode();
+        }
+    }
     // const isMobile = window.screen.width > 600
     return <header className='sticky top-0 border-b border-black'>
         <nav className="backdrop-blur-lg p-2">
             <div className="w-11/12 flex mx-auto p-4 justify-center justify-between items-center">
                 <div className='w-3/12'>
-                    <button><img src='https://cdn-icons-png.flaticon.com/512/6714/6714978.png' alt='Dark Mode' className='h-[30px] w-[30px]'></img></button>
+                    <button className='rounded-sm hover:bg-white hover:scale-95 p-2 transition ease-in-out duration-300' onClick={toggleTheme}><img src='https://cdn-icons-png.flaticon.com/512/6714/6714978.png' alt='Dark Mode' className='h-[30px] w-[30px]'></img></button>
                 </div>
                 <div className='w-3/12 flex justify-center'>
                     <Link to='/' className=''>

@@ -1,8 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root {
+  --body_background: #2f2e2d;
+}
 
-
+[data-theme='light'] {
+  --body_background: #f5f5f5;
+}
+[data-theme='dark'] {
+  --body_background: #2f2e2d;
+}
 body {
   margin: 0;
   height: 100vh;
@@ -10,12 +18,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    background-color: #2f2e2d;
+    background-color: var(--body_background);
+    
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 .height85 {
-  min-height: 82vh;
+  min-height: 81vh;
 }
 
 .skill {

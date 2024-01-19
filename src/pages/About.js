@@ -35,7 +35,7 @@ function About() {
             </AboutCard>
             <AboutCard>
                 <p className='text-white text-3xl underline font-semibold mt-6'>Connect with Me</p>
-                <p className='text-white text-xl my-2'>I am excited about the prospect of contributing to innovative projects and expanding my skills in a dynamic work environment. Explore my portfolio to see my projects and fill out the form on the <a href='/contact'>Contacts</a> page, or connect with me on <a href='https://www.linkedin.com/in/zion-griffin-9aa245243/' target='_blank'>LinkedIn</a>. I am eager to connect with fellow developers, mentors, and potential collaborators.</p>
+                <p className='text-white text-xl my-2'>I am excited about the prospect of contributing to innovative projects and expanding my skills in a dynamic work environment. Explore my portfolio to see my projects and fill out the form on the <a href='/contact' className='underline'>Contacts</a> page, or connect with me on <a href='https://www.linkedin.com/in/zion-griffin-9aa245243/' className='underline' target='_blank'>LinkedIn</a>. I am eager to connect with fellow developers, mentors, and potential collaborators.</p>
             </AboutCard>
         </div>
     </div>
