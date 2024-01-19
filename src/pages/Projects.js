@@ -56,7 +56,7 @@ const project_data = [
 function Projects() {
 
     return <div className='height85'>
-        <h1 className='text-8xl font-semibold text-white text-center'>My Projects</h1>
+        <h1 className='text-8xl font-semibold text-color text-center'>My Projects</h1>
         <div>
             <ProjectList projects={project_data} />
         </div>

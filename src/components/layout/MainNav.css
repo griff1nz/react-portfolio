@@ -2,7 +2,25 @@ nav img {
     width: 50px;
     height: 50px;
 }
-.active {
+#light .navlinks {
+    color: #2f2e2d;
+}
+#dark .navlinks {
+    color: #f5f5f5;
+}
+#light .navlinks:hover {
+    color: #1e40af;
+    background-color: #6b7280;
+}
+#dark .navlinks:hover {
+    color: #3b82f6;
+    background-color: #6b7280;
+}
+#light .active {
+    color: #2563eb;
+    pointer-events: none;
+}
+#dark .active {
     color: #2563eb;
     pointer-events: none;
 }

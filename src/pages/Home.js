@@ -69,18 +69,18 @@ function Home() {
         <div className='container mx-auto mb-16'>
             <div className='pt-4 flex flex-wrap'>
                 <div className='text-center m-auto'>
-                    <h1 className='text-8xl text-slate-200 font-semibold mb-10'>Hi, I'm Zion.</h1>
-                    <p className='text-slate-200 text-center mb-6'>Placeholder text</p>
+                    <h1 className='text-8xl text-color font-semibold mb-10'>Hi, I'm Zion.</h1>
+                    <p className='text-color text-center mb-6'>Placeholder text</p>
                 </div>
                 <img src='https://www.laminationsonline.com/wp-content/uploads/2019/03/placeholder-400x300.png' alt='Placeholder' className='m-auto object-right' id='portrait' />
             </div>
         </div>
         <div className='my-4'>
-            <h1 className='text-center underline text-2xl text-white font-semibold my-4'>Summary</h1>
-            <p className='text-center text-xl text-white'>A budding full-stack web developer with a knack for backend development. Actively working towards earning a certificate from University of Pennsylvania!</p>
+            <h1 className='text-center underline text-2xl text-color font-semibold my-4'>Summary</h1>
+            <p className='text-center text-xl text-color'>A budding full-stack web developer with a knack for backend development. Actively working towards earning a certificate from University of Pennsylvania!</p>
         </div>
-        <hr className='w-8/12 m-auto' />
-        <h1 className='text-center underline text-2xl text-white font-semibold my-4'>Skills</h1>
+        <hr className='w-8/12 m-auto hr' />
+        <h1 className='text-center underline text-2xl text-color font-semibold my-4'>Skills</h1>
         <div>
             <SkillList skills={skillData} />
         </div>
