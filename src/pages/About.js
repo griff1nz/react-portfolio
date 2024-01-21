@@ -4,7 +4,7 @@ function About() {
         <h1 className='text-color text-center text-5xl font-semibold mb-4'>About Me</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 place-items-center items-start'>
             <AboutCard>
-                <img src='https://www.laminationsonline.com/wp-content/uploads/2019/03/placeholder-400x300.png' alt='Placeholder' className='m-auto object-right mb-3' id='portrait' />
+                <img src='../../images/about-me.jpg' alt='Placeholder' className='m-auto object-right mb-3' id='portrait' />
                 <p className='text-color text-3xl underline font-semibold'>Hello, my name is Zion Griffin.</p>
                 <p className='text-color text-xl my-2'>Embarking on my journey as a rising web developer, I am enthusiastic about creating impactful digital experiences. Eager to contribute and learn, I bring a fresh perspective, a passion for coding, and a dedication to mastering the art of web development.</p>
             </AboutCard>

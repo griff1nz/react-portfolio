@@ -68,11 +68,11 @@ function Home() {
     return <div className='height85 mt-4'>
         <div className='container mx-auto mb-16'>
             <div className='pt-4 flex flex-wrap'>
-                <div className='text-center m-auto'>
+                <div className='text-center my-auto ml-auto'>
                     <h1 className='text-8xl text-color font-semibold mb-10'>Hi, I'm Zion.</h1>
                     <p className='text-color text-center mb-6'>Placeholder text</p>
                 </div>
-                <img src='https://www.laminationsonline.com/wp-content/uploads/2019/03/placeholder-400x300.png' alt='Placeholder' className='m-auto object-right' id='portrait' />
+                <img src='../../images/portfolio-homepage.jpg' alt='Placeholder' className='m-auto' id='portrait' />
             </div>
         </div>
         <div className='my-4'>
