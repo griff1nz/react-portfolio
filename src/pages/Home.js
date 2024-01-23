@@ -1,5 +1,6 @@
 import SkillList from '../components/skills/SkillList';
 import { useState, useEffect } from 'react';
+import { useInView } from 'framer-motion';
 
 const skillData = [
     {

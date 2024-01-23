@@ -1,4 +1,6 @@
 import ProjectList from '../components/Project/ProjectList';
+import classes from './TechSpan.css';
+
 const project_data = [
     {
         id: 'p1',
@@ -8,7 +10,8 @@ const project_data = [
         role: 'Backend Developer',
         repo: 'https://github.com/ashleyh5440/gods-beasts-game',
         app: 'https://gods-and-beasts-game-15c8c3fec868.herokuapp.com/',
-        technologies: 'Handlebars, JavaScript, Node.js, Express, MySQL'
+        technologies: <><span className='techspan border-2 border-orange-500'>Handlebars</span><span className='techspan border-2 border-yellow-300'>JavaScript</span><span className='techspan border-2 border-pink-400'>MySQL</span><span className='techspan border-2 border-green-500'>Node.js</span></>
+        // 'Handlebars, JavaScript, Node.js, Express, MySQL'
     },
     {
         id: 'p2',
@@ -18,7 +21,7 @@ const project_data = [
         role: 'Backend Developer',
         repo: 'https://github.com/Lychnian/dog-breeds-for-you',
         app: 'https://lychnian.github.io/dog-breeds-for-you/',
-        technologies: 'Handlebars, JavaScript'
+        technologies: <><span className='techspan border-2 border-orange-600'>HTML</span><span className='techspan border-2 border-yellow-300'>JavaScript | jQuery</span></>
     },
     {
         id: 'p3',
@@ -28,7 +31,7 @@ const project_data = [
         role: 'Sole Author',
         repo: 'https://github.com/griff1nz',
         app: 'https://griff1nz.github.io/weather-dashboard/',
-        technologies: 'HTML, JavaScript, jQuery'
+        technologies: <><span className='techspan border-2 border-yellow-300'>JavaScript</span><span className='techspan border-2 border-orange-600'>HTML</span><span className='techspan border-2 border-purple-600'>Bootstrap</span></>
     },
     {
         id: 'p4',
@@ -38,7 +41,8 @@ const project_data = [
         role: 'Sole Author',
         repo: 'https://github.com/griff1nz/note-taker',
         app: 'https://zion-note-taker-aedc66c4768d.herokuapp.com/',
-        technologies: 'JavaScript, Express, Node.js'
+        technologies: <><span className='techspan border-2 border-slate-500'>ExpressJS</span><span className='techspan border-2 border-yellow-300'>JavaScript</span><span className='techspan border-2 border-green-500'>Node.js</span></>
+        // 'JavaScript, Express, Node.js'
     },
     {
         id: 'p5',
@@ -48,15 +52,14 @@ const project_data = [
         role: 'Sole Author',
         repo: 'https://github.com/griff1nz/employee-tracker',
         app: 'https://drive.google.com/file/d/1TjG6dRq4q2AlsC5r6ISaN6Yk4Rwj2eVQ/view',
-        technologies: 'MySQL, JavaScript, Node.js'
+        technologies: <><span className='techspan border-2 border-pink-400'>MySQL</span><span className='techspan border-2 border-yellow-300'>JavaScript</span><span className='techspan border-2 border-green-500'>Node.js</span></>
     }
 
 ]
-
 function Projects() {
 
-    return <div className='height85'>
-        <h1 className='text-8xl font-semibold text-color text-center'>My Projects</h1>
+    return <div className='height85 my-4'>
+        <h1 className='text-5xl font-semibold text-color text-center'>My Projects</h1>
         <div>
             <ProjectList projects={project_data} />
         </div>
