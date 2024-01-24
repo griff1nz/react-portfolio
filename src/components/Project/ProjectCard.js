@@ -5,7 +5,7 @@ import classes from './ProjectCard.css';
 function ProjectCard(props) {
     return <li className='sm:w-10/12 p-5'>
         <div className='ml-4 mb-4'>
-            <h3 className='text-color text-4xl underline'>{props.title}</h3>
+            <h3 className='text-color text-4xl font-semibold'>{props.title}</h3>
             <p className='mt-6 text-color text-xl'>{props.description}</p>
             <p className='mt-3 text-color text-xl'>My Role: {props.role}</p>
 

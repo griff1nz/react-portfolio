@@ -47,7 +47,7 @@ function ContactForm() {
                 <label htmlFor='messagetext' className='text-2xl text-color'>Message</label>
                 <textarea rows='5' required className='w-full mt-1 p-1 bg-slate-600 text-color rounded-md' name='message' id='messagetext'></textarea>
             </div>
-            <button className='p-4 bg-blue-900 rounded-md text-color hover:scale-95 transition ease-in-out duration-150'>Send</button>
+            <button className='p-2 px-8 bg-blue-900 rounded-md text-color hover:scale-95 transition ease-in-out duration-150'>Send</button>
             {display == 'true' && <p className='text-color mt-3'>{resultText}</p>}
         </form>
     </Card>

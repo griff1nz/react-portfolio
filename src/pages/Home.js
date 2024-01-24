@@ -77,11 +77,11 @@ function Home() {
             </div>
         </div>
         <div className='my-4'>
-            <h1 className='text-center underline text-2xl text-color font-semibold my-4'>Summary</h1>
+            <h1 className='text-center text-2xl text-color font-semibold my-4'>Summary</h1>
             <p className='text-center text-xl text-color'>A budding full-stack web developer skilled in both frontend and backend development. Actively working towards earning a certificate from University of Pennsylvania!</p>
         </div>
         <hr className='w-8/12 m-auto hr' />
-        <h1 className='text-center underline text-2xl text-color font-semibold my-4'>Skills</h1>
+        <h1 className='text-center text-2xl text-color font-semibold my-4'>Skills</h1>
         <div>
             <SkillList skills={skillData} />
         </div>
