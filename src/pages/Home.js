@@ -1,6 +1,6 @@
 import SkillList from '../components/skills/SkillList';
 import { useState, useEffect } from 'react';
-import { useInView } from 'framer-motion';
+import { useInView, motion } from 'framer-motion';
 
 const skillData = [
     {
@@ -63,14 +63,15 @@ const skillData = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png',
         desc: "Bootstrap",
     },
-    
+
 ]
 function Home() {
     return <div className='height85 mt-4'>
         <div className='container mx-auto mb-16'>
             <div className='pt-4 flex flex-wrap'>
-                <div className='text-center my-auto ml-auto'>
-                    <h1 className='text-8xl text-color font-semibold mb-10'>Hi, I'm Zion.</h1>
+
+                <div className='text-center my-auto mx-auto'>
+                    <h1 className='text-8xl text-color text-center font-semibold mb-10'>Hi, I'm Zion.</h1>
                     <p className='text-color text-center mb-6'>Placeholder text</p>
                 </div>
                 <img src='../../images/portfolio-homepage.jpg' alt='Placeholder' className='m-auto' id='portrait' />
@@ -86,7 +87,7 @@ function Home() {
             <SkillList skills={skillData} />
         </div>
     </div>
-    
+
 }
 
 export default Home;

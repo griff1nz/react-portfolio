@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 import classes from './MainNav.css';
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 const linkdata = [
     {
         id: 'bruh1',
@@ -42,10 +43,10 @@ function MainNav(props) {
     }, []);
     const [dropDown, showDropDown] = useState(false);
 
-    const handleClick = () => {
-        // showDropDown((curr) => (curr == false ? true : false))
-    }
 
+    const handleClick = () => {
+        showDropDown((curr) => (curr == false ? true : false));    
+    }
 
     // const isMobile = window.screen.width > 600
     return <header className='sticky top-0 border-b border-black'>
@@ -67,15 +68,22 @@ function MainNav(props) {
                     </ul>
                 </div>
                 }
-                {!showMenu && <div className="w-auto md:block w-3/12 flex justify-end" id="navbar-solid-bg">
-                    <button onClick={handleClick}>
-                        <img src='https://cdn4.iconfinder.com/data/icons/interface-essential-vol-1/24/navigation-menu-1--button-parallel-vertical-lines-menu-navigation-three-hamburger-512.png' alt='collapsible' />
+                {!showMenu && <div className="md:block w-3/12 flex justify-end relative" id="navbar-solid-bg">
+                    <button className='float-right mr-4' onClick={handleClick}>
+                        <img src='https://cdn4.iconfinder.com/data/icons/interface-essential-vol-1/24/navigation-menu-1--button-parallel-vertical-lines-menu-navigation-three-hamburger-512.png' alt='collapsible' className='w-[25px] h-[25px]' />
                     </button>
+                    {dropDown && <div className='absolute top-10 right-0 smallnav w-[150px] border-2 border rounded-md p-2 shadow-[10px_10px_30px_-15px_rgba(0,0,0,1)]'>
+                        <ul>
+                            {linkdata.map((data, i) => <li key={i} className='my-3'>
+                                <NavLink to={data.destination} className="navlinks rounded transition ease-in-out duration-300 p-2 text-xl font-semibold">{data.name}</NavLink>
+                            </li>)}
+                        </ul>
+                    </div>}
                 </div>}
             </div>
         </nav>
 
 
-    </header>
+    </header >
 }
 export default MainNav;

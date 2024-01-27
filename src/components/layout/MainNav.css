@@ -24,3 +24,11 @@ nav img {
     color: #2563eb;
     pointer-events: none;
 }
+
+#dark .smallnav {
+    background-color: #2f2e2d;
+}
+
+#light .smallnav {
+    background-color: #f5f5f5;
+}
