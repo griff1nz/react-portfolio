@@ -66,28 +66,29 @@ const skillData = [
 
 ]
 function Home() {
-    return <div className='height85 mt-4'>
-        <div className='container mx-auto mb-16'>
-            <div className='pt-4 flex flex-wrap'>
+    return <motion.div exit={{ opacity: 0 }}>
+        <div className='height85 mt-4'>
+            <div className='container mx-auto mb-16'>
+                <div className='pt-4 flex flex-wrap'>
 
-                <div className='text-center my-auto mx-auto'>
-                    <h1 className='text-8xl text-color text-center font-semibold mb-10'>Hi, I'm Zion.</h1>
-                    <p className='text-color text-center mb-6'>Placeholder text</p>
+                    <div className='text-center my-auto mx-auto'>
+                        <h1 className='text-8xl text-color text-center font-semibold mb-10'>Hi, I'm Zion.</h1>
+                        <p className='text-color text-center mb-6'>Placeholder text</p>
+                    </div>
+                    <img src='../../images/portfolio-homepage.jpg' alt='Placeholder' className='m-auto' id='portrait' />
                 </div>
-                <img src='../../images/portfolio-homepage.jpg' alt='Placeholder' className='m-auto' id='portrait' />
+            </div>
+            <div className='my-4'>
+                <h1 className='text-center text-2xl text-color font-semibold my-4'>Summary</h1>
+                <p className='text-center text-xl text-color'>A budding full-stack web developer skilled in both frontend and backend development. Actively working towards earning a certificate from University of Pennsylvania!</p>
+            </div>
+            <hr className='w-8/12 m-auto hr' />
+            <h1 className='text-center text-2xl text-color font-semibold my-4'>Skills</h1>
+            <div className='relative w-6/12 p-4 mx-auto overflow-hidden h-[90px]'>
+                <SkillList skills={skillData} />
             </div>
         </div>
-        <div className='my-4'>
-            <h1 className='text-center text-2xl text-color font-semibold my-4'>Summary</h1>
-            <p className='text-center text-xl text-color'>A budding full-stack web developer skilled in both frontend and backend development. Actively working towards earning a certificate from University of Pennsylvania!</p>
-        </div>
-        <hr className='w-8/12 m-auto hr' />
-        <h1 className='text-center text-2xl text-color font-semibold my-4'>Skills</h1>
-        <div>
-            <SkillList skills={skillData} />
-        </div>
-    </div>
-
+    </motion.div>
 }
 
 export default Home;

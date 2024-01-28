@@ -1,0 +1,23 @@
+.carousel-track {
+    /* position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0; */
+    /* justify-content: center; */
+    align-items: center;
+    height: 80px;
+    gap: 16px;
+    width: 200%;
+    height: 100%;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px * 7))
+    }
+}
