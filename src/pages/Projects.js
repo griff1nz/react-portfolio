@@ -1,5 +1,6 @@
 import ProjectList from '../components/Project/ProjectList';
 import classes from './TechSpan.css';
+import { motion } from 'framer-motion';
 
 const project_data = [
     {
@@ -58,12 +59,14 @@ const project_data = [
 ]
 function Projects() {
 
-    return <div className='height85 my-4'>
+    return <motion.div initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.75, ease: 'easeOut' }} className='height85 my-4'>
         <h1 className='text-5xl font-semibold text-color text-center'>My Projects</h1>
         <div>
             <ProjectList projects={project_data} />
         </div>
-    </div>
+    </motion.div>
 }
 
 export default Projects;

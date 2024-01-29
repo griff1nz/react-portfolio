@@ -66,7 +66,11 @@ const skillData = [
 
 ]
 function Home() {
-    return <motion.div exit={{ opacity: 0 }}>
+    return <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.75, ease: 'easeOut' }}
+        >
         <div className='height85 mt-4'>
             <div className='container mx-auto mb-16'>
                 <div className='pt-4 flex flex-wrap'>
@@ -84,7 +88,8 @@ function Home() {
             </div>
             <hr className='w-8/12 m-auto hr' />
             <h1 className='text-center text-2xl text-color font-semibold my-4'>Skills</h1>
-            <div className='relative w-6/12 p-4 mx-auto overflow-hidden h-[90px]'>
+            <div className='w-[920px] p-4 mx-auto overflow-hidden h-[90px] flex whitespace-nowrap'>
+                <SkillList skills={skillData} />
                 <SkillList skills={skillData} />
             </div>
         </div>
