@@ -33,21 +33,21 @@ function ContactForm() {
         <form className='grid place-items-center' onSubmit={submitHandler}>
             <div className='p-2 w-10/12'>
                 <label htmlFor='nametext' className='text-2xl text-color'>Name</label>
-                <input type='text' required className='w-full mt-1 p-1 bg-slate-600 text-color rounded-md' name='name' id='nametext' />
+                <input type='text' required className='w-full textbox mt-1 p-1 bg-slate-600 text-color rounded-md' name='name' id='nametext' />
             </div>
             <div className='p-2 w-10/12'>
                 <label htmlFor='emailtext' className='text-2xl text-color'>Email</label>
-                <input type='email' className='w-full mt-1 p-1 bg-slate-600 text-color rounded-md' required name='email' id='emailtext'></input>
+                <input type='email' className='w-full textbox -1 p-1 bg-slate-600 text-color rounded-md' required name='email' id='emailtext'></input>
             </div>
             <div className='p-2 w-10/12'>
                 <label htmlFor='subjecttext' className='text-2xl text-color'>Subject</label>
-                <input type='text' required className='w-full mt-1 p-1 bg-slate-600 text-color rounded-md' name='subject' id='subjecttext' />
+                <input type='text' required className='w-full textbox mt-1 p-1 bg-slate-600 text-color rounded-md' name='subject' id='subjecttext' />
             </div>
             <div className='p-2 w-10/12'>
                 <label htmlFor='messagetext' className='text-2xl text-color'>Message</label>
-                <textarea rows='5' required className='w-full mt-1 p-1 bg-slate-600 text-color rounded-md' name='message' id='messagetext'></textarea>
+                <textarea rows='5' required className='w-full textbox mt-1 p-1 bg-slate-600 text-color rounded-md' name='message' id='messagetext'></textarea>
             </div>
-            <button className='p-2 px-8 bg-blue-900 rounded-md text-color hover:scale-95 transition ease-in-out duration-150'>Send</button>
+            <button className='p-2 px-8 bg-blue-900 rounded-md text-color hover:scale-90 hover:bg-blue-600 transition ease-in-out duration-150' id='sendbutton'>Send</button>
             {display == 'true' && <p className='text-color mt-3'>{resultText}</p>}
         </form>
     </Card>

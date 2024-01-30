@@ -61,7 +61,8 @@ function Projects() {
 
     return <motion.div initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
-    transition={{ duration: 0.75, ease: 'easeOut' }} className='height85 my-4'>
+    transition={{ duration: 0.3, ease: 'easeOut' }}
+    exit={{opacity: 0}} className='height85 my-4'>
         <h1 className='text-5xl font-semibold text-color text-center'>My Projects</h1>
         <div>
             <ProjectList projects={project_data} />

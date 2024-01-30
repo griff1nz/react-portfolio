@@ -5,6 +5,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import Home from './pages/Home';
+import Test from './pages/Test';
 import MainNav from './components/layout/MainNav';
 import Footer from './components/layout/Footer';
 import { createContext, useState } from 'react';
@@ -30,13 +31,14 @@ function App() {
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div id={theme}>
-        <MainNav passedComponent={<button className='rounded-sm hover:bg-white hover:scale-95 p-2 transition ease-in-out duration-300' id='toggle' onClick={toggleTheme}><img src={sourceImg} alt='Dark Mode' className='h-[30px] w-[30px]'></img></button>} />
-        <AnimatePresence>
-            <Routes>
+        <MainNav passedComponent={<button className='rounded-sm hover:bg-white hover:scale-95 p-2 transition ease-in-out duration-300 toggle' onClick={toggleTheme}><img src={sourceImg} alt='Dark Mode' className='h-[30px] w-[30px]'></img></button>} />
+        <AnimatePresence initial={'false'} mode={'wait'}>
+            <Routes location={location} key={location.pathname}>
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<About />} />
               <Route path='/projects' element={<Projects />} />
               <Route path='/contact' element={<Contact />} />
+              <Route path='*' element={<Test />}/>
             </Routes>
         </AnimatePresence>
         <Footer />

@@ -16,8 +16,8 @@ function ProjectCard(props) {
         <div className='flex justify-between'>
             <p className='mt-6 text-color md:text-xl text-sm'>{props.technologies}</p>
             <div className='flex mt-4'>
-                <a href={props.app} target='_blank'><img src='https://static.thenounproject.com/png/1483687-200.png' className='sm:h-[40px] sm:w-[40px] w-[20px] h-[20px] mr-4' /></a>
-                <a href={props.repo} target='_blank'><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' target='_blank' className='sm:h-[40px] sm:w-[40px]w-[20px] h-[20px]' /></a>
+                <a href={props.app} target='_blank'><img src='https://static.thenounproject.com/png/1483687-200.png' className='sm:h-[40px] sm:w-[40px] w-[20px] h-[20px] mr-4 rounded-sm hover:bg-white hover:scale-105 transition ease-in-out duration-300 toggle' /></a>
+                <a href={props.repo} target='_blank'><img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' target='_blank' className='sm:h-[40px] sm:w-[40px]w-[20px] h-[20px] rounded-sm hover:bg-white hover:scale-105 transition ease-in-out duration-300 toggle' /></a>
             </div>
         </div>
 

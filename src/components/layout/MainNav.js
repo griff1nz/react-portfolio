@@ -37,7 +37,7 @@ function MainNav(props) {
                 setShowMenu(true);
             }
         };
-
+        handleResize();
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -75,7 +75,7 @@ function MainNav(props) {
                     {dropDown && <div className='absolute top-10 right-0 smallnav w-[150px] border-2 border rounded-md p-2 shadow-[10px_10px_30px_-15px_rgba(0,0,0,1)]'>
                         <ul>
                             {linkdata.map((data, i) => <li key={i} className='my-3'>
-                                <NavLink to={data.destination} className="navlinks rounded transition ease-in-out duration-300 p-2 text-xl font-semibold">{data.name}</NavLink>
+                                <NavLink to={data.destination} className="navlinks rounded transition ease-in-out duration-300 p-2 text-xl font-semibold" onClick={handleClick}>{data.name}</NavLink>
                             </li>)}
                         </ul>
                     </div>}

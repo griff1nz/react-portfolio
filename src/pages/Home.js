@@ -1,6 +1,7 @@
 import SkillList from '../components/skills/SkillList';
 import { useState, useEffect } from 'react';
 import { useInView, motion } from 'framer-motion';
+import { ReactTyped } from 'react-typed'
 
 const skillData = [
     {
@@ -63,21 +64,29 @@ const skillData = [
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png',
         desc: "Bootstrap",
     },
+    {
+        id: 'i13',
+        image: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/mongodb_logo_icon_170943.png',
+        desc: 'MongoDB'
+    }
 
 ]
 function Home() {
-    return <motion.div 
+    return <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.75, ease: 'easeOut' }}
-        >
+        exit={{ opacity: 0, duration: 0.3 }}
+        transition={{ duration: 0.25, ease: 'easeOut' }}
+    >
         <div className='height85 mt-4'>
             <div className='container mx-auto mb-16'>
                 <div className='pt-4 flex flex-wrap'>
 
-                    <div className='text-center my-auto mx-auto'>
-                        <h1 className='text-8xl text-color text-center font-semibold mb-10'>Hi, I'm Zion.</h1>
-                        <p className='text-color text-center mb-6'>Placeholder text</p>
+                    <div
+                        className='text-center my-auto mx-auto'>
+                        <h1 className='text-8xl text-color text-center font-semibold mb-10'>Hi, I'm <span className='text-sky-300'>Zion</span>.</h1>
+                        <p className='text-color text-center text-xl mb-6'>{' '}
+                        <ReactTyped strings={['Full Stack Developer', 'Musician', 'Gym Rat']} typeSpeed={100} backSpeed={50} loop/></p>
                     </div>
                     <img src='../../images/portfolio-homepage.jpg' alt='Placeholder' className='m-auto' id='portrait' />
                 </div>

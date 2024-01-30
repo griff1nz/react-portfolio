@@ -10,3 +10,13 @@ textarea {
     padding: 0;
     box-sizing: border-box;
 }
+
+#light .textbox {
+    background-color: #9ca3af;
+}
+#light #sendbutton {
+    background-color: #0ea5e9;
+}
+#light #sendbutton:hover {
+    background-color: #7dd3fc;
+}
