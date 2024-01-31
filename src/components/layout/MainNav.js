@@ -57,7 +57,7 @@ function MainNav(props) {
                 </div>
                 <div className='w-3/12 flex justify-center'>
                     <Link to='/' className=''>
-                        <img id='logo' src='../../logo.svg' className='hover:animate-[spin_0.5s]'></img>
+                        <img id='logo' src='../../logo.png' className='hover:animate-[spin_0.5s]'></img>
                     </Link>
                 </div>
                 {showMenu && <div className="hidden w-auto md:block w-3/12" id="navbar-solid-bg">

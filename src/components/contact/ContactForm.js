@@ -20,11 +20,11 @@ function ContactForm() {
             .then((result) => {
                 console.log(result.text);
 
-                resultText = "Thank you for your email! I will get back to you as soon as I can."
+                resultText = "Thank you for your message! I will get back to you as soon as I can."
                 toggleDisplay();
             }, (error) => {
                 console.log(error.text);
-                resultText = "There was an error sending your email; Please try again."
+                resultText = "There was an error sending your message; Please try again."
                 toggleDisplay();
             });
         event.target.reset();

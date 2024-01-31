@@ -66,7 +66,7 @@ function About() {
                 <AboutCard>
                     <p className='text-color text-3xl  font-semibold mt-3'>🎓 Educational Background</p>
                     <p className='text-color text-xl my-2'>As of March 2024, I will have graduated with a certificate in Full-Stack Web Development from University of Pennsylvania. During my academic journey, I developed a strong foundation in programming languages such as HTML, CSS, and JavaScript, and gained hands-on experience in building responsive and dynamic web applications.
-                        Prior to that, I passed AP Computer Science A and achieved an exam score of 5 before graduating from Emmaus High School in Emmaus, PA.</p>
+                            Prior to that, I passed AP Computer Science A and achieved an exam score of 5 before graduating from Emmaus High School in Emmaus, PA.</p>
                 </AboutCard>
                 <AboutCard>
                     <p className='text-color text-3xl  font-semibold mt-3'>🖥️ Passion for Coding</p>
