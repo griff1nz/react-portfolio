@@ -97,7 +97,7 @@ function Home() {
             </div>
             <hr className='w-8/12 m-auto hr' />
             <h1 className='text-center text-2xl text-color font-semibold my-4'>Skills</h1>
-            <div className='w-[920px] p-4 mx-auto overflow-hidden h-[90px] flex whitespace-nowrap'>
+            <div className='w-[55vw] p-4 mx-auto overflow-hidden h-[90px] flex whitespace-nowrap'>
                 <SkillList skills={skillData} />
                 <SkillList skills={skillData} />
             </div>
