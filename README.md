@@ -1,7 +1,12 @@
 # React Portfolio
+[View the webpage](https://ziongriffin.com)
 
 ## Description
-Behold, my portfolio built from the ground up in ReactJS! I started this project with absolutely zero experience with React, so it was quite the learning journey. However, after a month, it is complete, and I am now an expert in React. (Well, not quite an expert, but pretty close.)
+Behold, my portfolio built from the ground up in ReactJS! I started this project with absolutely zero experience with React, so it was quite the learning journey. However, after a month, it is complete, and I am now confident in my React skills.
+![Screenshot of Webpage](<./screenie.png>)
+
+## Installation
+N/A
 
 ## Usage
 Loading into the website, the homepage is displayed to the user, and from there they can click any of the links at the top to navigate through the website.
