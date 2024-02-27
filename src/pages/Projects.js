@@ -47,12 +47,12 @@ const project_data = [
     },
     {
         id: 'p5',
-        title: 'Employee Tracker',
+        title: 'Tech Blog',
         image: '../../images/employee.png',
-        description: 'Easily manage a database containing a group of employees for a company.',
+        description: 'Create, view, and comment on posts about technology.',
         role: 'Sole Author',
-        repo: 'https://github.com/griff1nz/employee-tracker',
-        app: 'https://drive.google.com/file/d/1TjG6dRq4q2AlsC5r6ISaN6Yk4Rwj2eVQ/view',
+        repo: 'https://github.com/griff1nz/tech-blog',
+        app: 'https://hbs-tech-blog-59b7f5e6f9b6.herokuapp.com/',
         technologies: <><span className='techspan border-2 border-pink-400'>MySQL</span><span className='techspan border-2 border-yellow-300'>JavaScript</span><span className='techspan border-2 border-green-500'>Node.js</span></>
     }
 
