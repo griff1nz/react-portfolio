@@ -68,6 +68,11 @@ const skillData = [
         id: 'i13',
         image: 'https://cdn.icon-icons.com/icons2/2699/PNG/512/mongodb_logo_icon_170943.png',
         desc: 'MongoDB'
+    },
+    {
+        id: 'i14',
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png',
+        desc: 'GraphQL'
     }
 
 ]
@@ -93,7 +98,7 @@ function Home() {
             </div>
             <div className='my-4'>
                 <h1 className='text-center text-2xl text-color font-semibold my-4'>Summary</h1>
-                <p className='text-center text-xl text-color'>A budding full-stack web developer skilled in both frontend and backend development. Actively working towards earning a certificate from University of Pennsylvania!</p>
+                <p className='text-center text-xl text-color'>A budding software developer holding a Full-Stack Web Development certificate from University of Pennsylvania, skilled in both frontend and backend development.</p>
             </div>
             <hr className='w-8/12 m-auto hr' />
             <h1 className='text-center text-2xl text-color font-semibold my-4'>Skills</h1>

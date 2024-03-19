@@ -26,13 +26,13 @@ const project_data = [
     },
     {
         id: 'p3',
-        title: 'Weather Dashboard',
-        image: '../../images/Weather.png',
-        description: 'Search for an area and view the weather there. Uses OpenWeatherMap\'s API.',
-        role: 'Sole Author',
-        repo: 'https://github.com/griff1nz',
-        app: 'https://griff1nz.github.io/weather-dashboard/',
-        technologies: <><span className='techspan border-2 border-yellow-300'>JavaScript</span><span className='techspan border-2 border-orange-600'>HTML</span><span className='techspan border-2 border-purple-600'>Bootstrap</span></>
+        title: 'Baby Steps',
+        image: '../../images/babysteps.png',
+        description: 'Create journal entries and upload images to track your pregnancy journey.',
+        role: 'Frontend Developer',
+        repo: 'https://github.com/jeffch19/Baby-Steps',
+        app: 'https://baby-steps.onrender.com/',
+        technologies: <><span className='techspan border-2 border-sky-300'>React</span><span className='techspan border-2 border-lime-600'>MongoDB</span><span className='techspan border-2 border-[#E632AD]'>GraphQL</span><span className='techspan border-2 border-[#38BDF8]'>Tailwind CSS</span></>
     },
     {
         id: 'p4',
@@ -48,7 +48,7 @@ const project_data = [
     {
         id: 'p5',
         title: 'Tech Blog',
-        image: '../../images/employee.png',
+        image: '../../images/mvc-blog.png',
         description: 'Create, view, and comment on posts about technology.',
         role: 'Sole Author',
         repo: 'https://github.com/griff1nz/tech-blog',
