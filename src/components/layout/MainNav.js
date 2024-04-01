@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import classes from './MainNav.css';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Dropdown from 'react-bootstrap/Dropdown';
+import Button from 'react-bootstrap/Button';
 const linkdata = [
     {
         id: 'bruh1',
@@ -21,7 +23,7 @@ const linkdata = [
     },
     {
         id: 'bruh4',
-        name: 'Resume/Contact',
+        name: 'Contact',
         destination: '/contact'
     }
 ];
@@ -57,12 +59,12 @@ function MainNav(props) {
                         {props.passedComponent}
                     </div>
                 </div>
-                <div className='w-1/12 flex justify-center'>
+                <div className='w-[50px] flex justify-center'>
                     <Link to='/' className=''>
-                        <img id='logo' src='../../logo.png' alt='site logo' className='hover:animate-[spin_0.5s]'></img>
+                        <img id='logo' src='../../logo.png' alt='site logo' className='hover:animate-[spin_0.5s] '></img>
                     </Link>
                 </div>
-                {showMenu && <div className="hidden w-auto md:block w-4/12" id="navbar-solid-bg">
+                {showMenu && <div className="hidden md:block w-4/12" id="navbar-solid-bg">
                     <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700 justify-end">
                         {linkdata.map((data, i) => <li key={i}>
                             <NavLink to={data.destination} className="navlinks rounded transition ease-in-out duration-300 p-1">{data.name}</NavLink>
@@ -71,7 +73,19 @@ function MainNav(props) {
                 </div>
                 }
                 {!showMenu && <div className="md:block w-4/12 flex justify-end relative" id="navbar-solid-bg">
-                    <button className='float-right mr-4' onClick={handleClick}>
+                    <Dropdown>
+                        <Dropdown.Toggle variant="secondary" id="dropdown-basic">
+                            
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            {linkdata.map((data, i) => <Dropdown.Item key={i}><NavLink to={data.destination}>{data.name}</NavLink></Dropdown.Item>)}
+                            {/* <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item> */}
+                        </Dropdown.Menu>
+                    </Dropdown>
+                    {/* <button className='float-right mr-4' onClick={handleClick}>
                         <img src='https://cdn4.iconfinder.com/data/icons/interface-essential-vol-1/24/navigation-menu-1--button-parallel-vertical-lines-menu-navigation-three-hamburger-512.png' alt='collapsible' className='w-[25px] h-[25px]' />
                     </button>
                     {dropDown && <div className='absolute top-10 right-0 smallnav w-full border-2 border rounded-md p-2 shadow-[10px_10px_30px_-15px_rgba(0,0,0,1)] transition-[height]'>
@@ -80,7 +94,7 @@ function MainNav(props) {
                                 <NavLink to={data.destination} className="navlinks rounded transition ease-in-out duration-300 p-2 text-xl font-semibold" onClick={handleClick}>{data.name}</NavLink>
                             </li>)}
                         </ul>
-                    </div>}
+                    </div>} */}
                 </div>}
             </div>
         </nav>

@@ -11,6 +11,7 @@ import Footer from './components/layout/Footer';
 import { createContext, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 
+
 export const ThemeContext = createContext();
 
 
