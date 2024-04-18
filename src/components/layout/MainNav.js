@@ -3,8 +3,7 @@ import { NavLink } from 'react-router-dom';
 import classes from './MainNav.css';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Dropdown from 'react-bootstrap/Dropdown';
-import Button from 'react-bootstrap/Button';
+
 const linkdata = [
     {
         id: 'bruh1',
@@ -73,19 +72,8 @@ function MainNav(props) {
                 </div>
                 }
                 {!showMenu && <div className="md:block w-4/12 flex justify-end relative" id="navbar-solid-bg">
-                    <Dropdown>
-                        <Dropdown.Toggle variant="secondary" id="dropdown-basic">
-                            
-                        </Dropdown.Toggle>
-
-                        <Dropdown.Menu>
-                            {linkdata.map((data, i) => <Dropdown.Item key={i}><NavLink to={data.destination}>{data.name}</NavLink></Dropdown.Item>)}
-                            {/* <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item> */}
-                        </Dropdown.Menu>
-                    </Dropdown>
-                    {/* <button className='float-right mr-4' onClick={handleClick}>
+                    
+                    <button className='float-right mr-4' onClick={handleClick}>
                         <img src='https://cdn4.iconfinder.com/data/icons/interface-essential-vol-1/24/navigation-menu-1--button-parallel-vertical-lines-menu-navigation-three-hamburger-512.png' alt='collapsible' className='w-[25px] h-[25px]' />
                     </button>
                     {dropDown && <div className='absolute top-10 right-0 smallnav w-full border-2 border rounded-md p-2 shadow-[10px_10px_30px_-15px_rgba(0,0,0,1)] transition-[height]'>
@@ -94,7 +82,7 @@ function MainNav(props) {
                                 <NavLink to={data.destination} className="navlinks rounded transition ease-in-out duration-300 p-2 text-xl font-semibold" onClick={handleClick}>{data.name}</NavLink>
                             </li>)}
                         </ul>
-                    </div>} */}
+                    </div>}
                 </div>}
             </div>
         </nav>
