@@ -62,7 +62,7 @@ function MainNav(props) {
                         <img id='logo' src='../../logo.png' alt='site logo' className='hover:animate-[spin_0.5s]'></img>
                     </Link>
                 </div>
-                {showMenu && <div className="hidden w-auto md:block w-4/12" id="navbar-solid-bg">
+                {showMenu && <div className="hidden md:block w-4/12" id="navbar-solid-bg">
                     <ul className="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent dark:bg-gray-800 md:dark:bg-transparent dark:border-gray-700 justify-end">
                         {linkdata.map((data, i) => <li key={i}>
                             <NavLink to={data.destination} className="navlinks rounded transition ease-in-out duration-300 p-1">{data.name}</NavLink>
