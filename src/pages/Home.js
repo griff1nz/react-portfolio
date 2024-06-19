@@ -73,6 +73,11 @@ const skillData = [
         id: 'i14',
         image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/2048px-GraphQL_Logo.svg.png',
         desc: 'GraphQL'
+    },
+    {
+        id: 'i15',
+        image: 'https://miro.medium.com/v2/resize:fit:600/1*i2skbfmDsHayHhqPfwt6pA.png',
+        desc: 'Go'
     }
 
 ]

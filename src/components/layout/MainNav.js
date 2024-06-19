@@ -21,7 +21,7 @@ const linkdata = [
     },
     {
         id: 'bruh4',
-        name: 'Resume/Contact',
+        name: 'Contact',
         destination: '/contact'
     }
 ];
@@ -57,7 +57,7 @@ function MainNav(props) {
                         {props.passedComponent}
                     </div>
                 </div>
-                <div className='w-1/12 flex justify-center'>
+                <div className='w-[50px] flex justify-center'>
                     <Link to='/' className=''>
                         <img id='logo' src='../../logo.png' alt='site logo' className='hover:animate-[spin_0.5s]'></img>
                     </Link>
@@ -74,13 +74,13 @@ function MainNav(props) {
                     <button className='float-right mr-4' onClick={handleClick}>
                         <img src='https://cdn4.iconfinder.com/data/icons/interface-essential-vol-1/24/navigation-menu-1--button-parallel-vertical-lines-menu-navigation-three-hamburger-512.png' alt='collapsible' className='w-[25px] h-[25px]' />
                     </button>
-                    {dropDown && <div className='absolute top-10 right-0 smallnav w-full border-2 border rounded-md p-2 shadow-[10px_10px_30px_-15px_rgba(0,0,0,1)] transition-[height]'>
-                        <ul className='grid justify-items-end'>
+                   <div className={dropDown ? 'absolute top-10 right-0 smallnav w-full border-2 border rounded-md p-2 shadow-[10px_10px_30px_-15px_rgba(0,0,0,1)] h-[250px]' : "h-[0px]"}>
+                        <ul className={dropDown ? 'grid justify-items-end' : "hidden"}>
                             {linkdata.map((data, i) => <li key={i} className='my-3'>
                                 <NavLink to={data.destination} className="navlinks rounded transition ease-in-out duration-300 p-2 text-xl font-semibold" onClick={handleClick}>{data.name}</NavLink>
                             </li>)}
                         </ul>
-                    </div>}
+                    </div>
                 </div>}
             </div>
         </nav>
